@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +10,40 @@
 </head>
 <body>
 
-	<h2>List:</h2>
-	<span>${arrTest}</span>
+	<header>
+		<div class="wrapper">
+			<div class="heading">
+				<h2>CRM - Customer Relationship Manager</h2>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<div class="container">
+			<div class="wrapper-table">
+				<table>
+					<thead>
+						<tr>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Email</th>
+						</tr>						
+					</thead>
+					<tbody>
+					
+						<c:forEach var="temp" items="${customers}">
+							<tr>
+								<td>${temp.firstName}</td>
+								<td>${temp.lastName}</td>
+								<td>${temp.email}</td>
+							</tr>						
+						</c:forEach>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
 
 </body>
 </html>
