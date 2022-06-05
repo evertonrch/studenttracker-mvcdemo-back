@@ -7,4 +7,6 @@ import br.com.studenttracker.entity.Customer;
 public interface CustomerDAO {
 
 	List<Customer> getAllCustomers();
+
+	void saveCustomer(Customer customer);
 }
