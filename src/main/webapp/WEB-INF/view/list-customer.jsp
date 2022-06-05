@@ -13,7 +13,7 @@
 	<header>
 		<div class="wrapper">
 			<div class="heading">
-				<h2>CRM - Customer Relationship Manager</h2>
+				<h1>CRM - Customer Relationship Manager</h1>
 			</div>
 		</div>
 	</header>
