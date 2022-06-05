@@ -20,6 +20,9 @@
 	
 	<main>
 		<div class="container">
+			<div class="wrapper-add-button">
+				<a href="showFormAdd">Add Customer</a>
+			</div>
 			<div class="wrapper-table">
 				<table>
 					<thead>
