@@ -39,13 +39,20 @@
 							
 							<c:url var="updateLink" value="/customer/showFormUpdate">
 								<c:param name="customerId" value="${temp.id}" />
-							</c:url>							
+							</c:url>	
+							
+							<c:url var="deleteLink" value="/customer/delete">
+								<c:param name="customerId" value="${temp.id}"/>							
+							</c:url>						
 						
 							<tr>
 								<td>${temp.firstName}</td>
 								<td>${temp.lastName}</td>
 								<td>${temp.email}</td>
-								<td><a href="${updateLink}">Update</a></td>
+								<td>
+									<a href="${updateLink}">Update</a> |
+									<a href="${deleteLink}">Delete</a>
+								</td>
 							</tr>						
 						</c:forEach>
 						
